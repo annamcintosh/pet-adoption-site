@@ -12,9 +12,7 @@ const App = () => {
           <Link to="/">Adopt Me!</Link>
         </header>
         <Switch>
-          <Route path="/details/:id">
-            <Details />
-          </Route>
+          <Route path="/details/:id" component={Details} />
           <Route exact path="/">
             <SearchParams />
           </Route>
