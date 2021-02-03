@@ -4,7 +4,7 @@ import Pet from "./Pet";
 const Results = ({ pets }) => {
   return (
     <div className="search">
-      {pets.length ? (
+      {!pets.length ? (
         <h1>No pets found.</h1>
       ) : (
         pets.map((pet) => (
@@ -14,7 +14,7 @@ const Results = ({ pets }) => {
             name={pet.name}
             breed={pet.breeds.primary}
             media={pet.photos}
-            location={`${pet.contact.addresss.city}, ${pet.contact.addresss.state}`}
+            // location={`${pet.contact.addresss.city}, ${pet.contact.addresss.state}`}
             id={pet.id}
           />
         ))
