@@ -4,8 +4,6 @@ import Carousel from "./Carousel";
 import ErrorBoundary from "./ErrorBoundary";
 import ThemeContext from "./ThemeContext";
 import Modal from "./Modal";
-import { navigate } from "react-router-dom";
-import { nullLiteral, nullLiteralTypeAnnotation } from "babel-types";
 
 class Details extends React.Component {
   state = { loading: true, showModal: false };
